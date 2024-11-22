@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="9rem"
+   height="3rem"
+   viewBox="0 0 400 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="GP_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2"
+     inkscape:cx="365"
+     inkscape:cy="254"
+     inkscape:window-width="1718"
+     inkscape:window-height="1360"
+     inkscape:window-x="0"
+     inkscape:window-y="150"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.9495px;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#55c57a;stroke-width:3.99577"
+       x="84.512398"
+       y="65.629356"
+       id="text1"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.9495px;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:3.99577"
+         x="84.512398"
+         y="65.629356"
+         id="tspan2">GREEN PALLET</tspan></text>
+    <path
+       id="rect3"
+       style="fill:#55c57a;stroke-width:0.238539"
+       d="M 1.6861846,6.8388544 V 93.819884 H 370.86176 v -3.62057 L 6.3797974,90.049524 v -79.57432 l 364.4819626,-0.003 V 6.8382444 Z" />
+    <path
+       id="rect23"
+       style="fill:#55c57a;stroke-width:0.265665"
+       d="m 17.440871,22.084664 v 56.4888 h 58.29284 v -56.4888 z m 1.63492,1.58431 h 55.02253 v 53.3197 h -55.02253 z" />
+    <rect
+       style="fill:#55c57a;stroke-width:0.204775"
+       id="rect24"
+       width="45.17688"
+       height="45.17688"
+       x="23.998852"
+       y="27.740625" />
+  </g>
+</svg>
