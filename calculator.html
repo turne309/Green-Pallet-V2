@@ -10,7 +10,7 @@
       content="Green Pallet is a revolutionary pallet management system designed to streamline the process of green transportation. Our goal is to provide an efficient and user-friendly platform for businesses to optimize their pallet operations."
     />
     <meta name="viewport" content="width=device-width, initial-scale-1" />
-    <link rel="stylesheet" href="styles\main.css" />
+    <link rel="stylesheet" href="styles\calculator.css" />
   </head>
   <body>
     <!-- header with navbar -->
@@ -19,8 +19,8 @@
       <!-- navbar -->
       <nav>
         <ul class="nav-links">
-          <li><a href="#">dashboard</a></li>
-          <li><a href="#">Pallet Calculator</a></li>
+          <li><a href="index.html">dashboard</a></li>
+          <li><a href="calculator.html">Pallet Calculator</a></li>
           <li><a href="#">Pricing Tool</a></li>
           <li><a href="#">Upcoming Features</a></li>
         </ul>
@@ -29,7 +29,362 @@
       <a class="cta" href="#"><button>Logout</button></a>
     </header>
 
-    <main class="main-calculator"></main>
+    <!-- Upper Calculator section -->
+    <main class="main-calculator">
+      <!-- Manifest Upload Section -->
+      <div class="calculations-container">
+        <div class="calc-container">
+          <div class="calc-card">
+            <h3>Upload .CSV Manifest</h3>
+            <div class="calc-drop_box">
+              <header class="calc-header">
+                <h4>Input Cost Information:</h4>
+                <input
+                  type="bid"
+                  class="form-control calculationInput"
+                  id="bidInput"
+                  aria-describedby="calculationInput"
+                  placeholder="Current Bid"
+                />
+                <input
+                  type="shipping"
+                  class="form-control calculationInput"
+                  id="shippingInput"
+                  aria-describedby="calculationInput"
+                  placeholder="Shipping"
+                />
+              </header>
+              <p>Only .CSV Files Supported</p>
+              <div class="calc-btn-div">
+                <input
+                  class="fileupload"
+                  type="file"
+                  hidden
+                  accept=".csv"
+                  id="fileID"
+                  style="display: none"
+                />
+                <button class="calc-btn">Choose File</button>
+                <button class="btn calc-btn-run" type="button">
+                  Run Calculations
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-container">
+          <table id="table" class="data-table"></table>
+        </div>
+        <!-- End of Results Section -->
+      </div>
+      <!-- End of Manifest Upload Section -->
+
+      <!-- Container for previously saved pallets -->
+      <div class="prev-pallets-container">
+        <div class="prev-header">
+          <h1>Previous Pallets</h1>
+          <div class="triangle"><img src="images\down-arrow-circle.svg" /></div>
+        </div>
+
+        <!-- Grid Section For Pallet Cards -->
+        <div class="prev-pallet-grid">
+          <!-- Previous Pallet Card -->
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <div class="pallet-card">
+            <div class="pallet-card-header">
+              <h3 class="pallet-card-title">Pallet: <span>5377442</span></h3>
+            </div>
+            <div class="pallet-card-detail">
+              <h3 class="pallet-card-sub-heading">
+                Pallet Profitibility: <span>A+</span>
+              </h3>
+              <div class="pallet-card-data">
+                <p class="pallet-profit-percent">
+                  Profit %: <span>$2,187</span>
+                </p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-roi-percent">ROI %: <span>50.71%</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-total-cost">Total Cost: <span>$4,313</span></p>
+              </div>
+              <div class="pallet-card-data">
+                <p class="pallet-revenue">Revenue: <span>$7,470</span></p>
+              </div>
+            </div>
+            <div class="pallet-card-footer">
+              <p class="pallet-card-footer-profit">
+                Profit: <span>$3,157</span>
+              </p>
+              <button class="button-pallet" role="button">
+                <span class="text">View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Previous Pallet Card -->
+        </div>
+        <!-- End Of Grid Section For Pallet Cards -->
+      </div>
+      <!-- End Of Container for previously saved pallets -->
+    </main>
 
     <div class="footer">
       <div class="footer-logo">
